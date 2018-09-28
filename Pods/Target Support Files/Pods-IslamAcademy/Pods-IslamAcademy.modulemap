@@ -1,0 +1,6 @@
+framework module Pods_IslamAcademy {
+  umbrella header "Pods-IslamAcademy-umbrella.h"
+
+  export *
+  module * { export * }
+}

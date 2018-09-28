@@ -32,11 +32,11 @@ class ContainerViewController: UIViewController {
         centerNavigationController = UINavigationController(rootViewController: centerViewController)
         view.addSubview(centerNavigationController.view)
         addChildViewController(centerNavigationController)
-        
+        centerViewController.navigationItem.title = "الداعية فاغيةالشهري"
         centerNavigationController.didMove(toParentViewController: self)
         
-        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
-        centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
+//        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))
+//        centerNavigationController.view.addGestureRecognizer(panGestureRecognizer)
         
     }
 }
@@ -59,6 +59,7 @@ extension ContainerViewController: CenterViewControllerDelegate {
         guard leftViewController == nil else { return }
         
         if let vc = UIStoryboard.leftViewController() {
+            vc.delegate = centerViewController
             addChildSidePanelController(vc)
             leftViewController = vc
         }
@@ -162,5 +163,21 @@ private extension UIStoryboard {
     }
     static func centerViewController() -> CenterViewController? {
         return mainStoryboard().instantiateViewController(withIdentifier: "CenterViewController") as? CenterViewController
+    }
+}
+
+extension UIApplication {
+    class func tryURL(urls: [String]) {
+        let application = UIApplication.shared
+        for url in urls {
+            if application.canOpenURL(URL(string: url)!) {
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(URL(string: url)!, options: [:], completionHandler: nil)
+                } else {
+                    UIApplication.shared.openURL(URL(string: url)!)
+                }
+                return
+            }
+        }
     }
 }

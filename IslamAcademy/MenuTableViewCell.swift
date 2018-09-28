@@ -18,5 +18,18 @@ class MenuTableViewCell: UITableViewCell {
         // Initialization code
     }
 
+    func bind(model : FeedType){
+        switch model {
+        case .Article:
+            logo.image = #imageLiteral(resourceName: "icons8-news-50")
+        case .Audio:
+            logo.image = #imageLiteral(resourceName: "icons8-music-50")
+        case .Video:
+            logo.image = #imageLiteral(resourceName: "icons8-documentary-50")
+        case .Main:
+            logo.image = #imageLiteral(resourceName: "icons8-home-50")
+        }
+        title.text = model.rawValue
+    }
 
 }
