@@ -24,18 +24,7 @@ class CenterViewController: UIViewController {
         
         ref = Database.database().reference()
 
-        ref.child("islamacdemy").observeSingleEvent(of: .value, with: { (snapshot) in
-            // Get user value
-            if let feedsDictionary = snapshot.value as? NSDictionary {
-                for feed in feedsDictionary {
-//                    feed
-                }
-                tableView.reloadData()
-            }
-            // ...
-        }) { (error) in
-            print(error.localizedDescription)
-        }
+        getFeeds()
 //        let f = Feed()
 //        f.title = "صوت";f.describe = "صصمرمنرمرمن";f.type = .Audio;allFeeds.append(f)
 //        let f1 = Feed()
@@ -49,18 +38,35 @@ class CenterViewController: UIViewController {
     @IBAction func sidePanClicked(_ sender: Any) {
         delegate?.toggleLeftPanel?()
     }
+    
+    func getFeeds(){
+        ref.child("islamacdemy").observeSingleEvent(of: .value, with: { [weak self](snapshot) in
+            // Get user value
+            if let feedsDictionary = snapshot.value as? NSDictionary {
+                for feed in feedsDictionary {
+                    //                    feed
+                }
+                tableView.reloadData()
+            }
+            
+            self?.filteredFeeds = self?.allFeeds
+            self?.tableView.reloadData()
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+    }
 }
 
 extension CenterViewController : SidePanelSelectionDelegate {
     func selectFeed(with type: FeedType) {
         if type == .Main {
-            filteredFeeds = allFeeds
+            getFeeds()
         }else {
             filteredFeeds = allFeeds.filter{
                 $0.type == type
             }
+            tableView.reloadData()
         }
-        tableView.reloadData()
         delegate?.toggleLeftPanel?()
     }
     

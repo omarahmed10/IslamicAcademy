@@ -24,7 +24,7 @@ class Feed: NSObject {
     var title = ""
     var describe = ""
     
-    init() {
+    override init() {
         
     }
     
@@ -35,8 +35,18 @@ class Feed: NSObject {
         guard let body = dict["content"]  as? String else { return nil }
         guard let type = dict["type"] as? String else {return nil}
         
+        if type == "Lecture"{
+            self.type = .Video
+            self.videoLink = body
+        }else if type == "Record"{
+            self.type = .Audio
+            self.audioLink = body
+        }else if type == "Article"{
+            self.type = .Article
+            self.text = body
+        }
         self.title = title
-        self.text = body
+        self.describe = desc
         
     }
     
