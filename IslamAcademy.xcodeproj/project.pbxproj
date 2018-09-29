@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07BF9E8B21600CA900A9CFEF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 07BF9E8A21600CA900A9CFEF /* GoogleService-Info.plist */; };
 		98430DF9215E9B3F0071816C /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98430DF8215E9B3F0071816C /* UIView+Shadow.swift */; };
 		98430DFB215EA1920071816C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98430DFA215EA1920071816C /* File.swift */; };
 		98430DFD215EA3180071816C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98430DFC215EA3180071816C /* FeedTableViewCell.swift */; };
-		98430E01215EB50A0071816C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 98430E00215EB5090071816C /* GoogleService-Info.plist */; };
 		B1AC35854F9671CE2DD9FC98 /* Pods_IslamAcademy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C70DF8AA8B566EE040F655 /* Pods_IslamAcademy.framework */; };
 		F4B01E11215CF88100E3FF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B01E10215CF88100E3FF1A /* AppDelegate.swift */; };
 		F4B01E13215CF88100E3FF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B01E12215CF88100E3FF1A /* ViewController.swift */; };
@@ -26,12 +26,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07BF9E8A21600CA900A9CFEF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		556FA1EC964C6DD9D0656710 /* Pods-IslamAcademy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslamAcademy.release.xcconfig"; path = "Pods/Target Support Files/Pods-IslamAcademy/Pods-IslamAcademy.release.xcconfig"; sourceTree = "<group>"; };
 		95C70DF8AA8B566EE040F655 /* Pods_IslamAcademy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IslamAcademy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		98430DF8215E9B3F0071816C /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		98430DFA215EA1920071816C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		98430DFC215EA3180071816C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		98430E00215EB5090071816C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC7D751100E134584F2CEFFD /* Pods-IslamAcademy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslamAcademy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IslamAcademy/Pods-IslamAcademy.debug.xcconfig"; sourceTree = "<group>"; };
 		F4B01E0D215CF88100E3FF1A /* IslamAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B01E10215CF88100E3FF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		F4B01E0F215CF88100E3FF1A /* IslamAcademy */ = {
 			isa = PBXGroup;
 			children = (
-				98430E00215EB5090071816C /* GoogleService-Info.plist */,
+				07BF9E8A21600CA900A9CFEF /* GoogleService-Info.plist */,
 				F4B01E10215CF88100E3FF1A /* AppDelegate.swift */,
 				F4B01E12215CF88100E3FF1A /* ViewController.swift */,
 				F4B01E14215CF88100E3FF1A /* Main.storyboard */,
@@ -179,7 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4B01E1B215CF88200E3FF1A /* LaunchScreen.storyboard in Resources */,
-				98430E01215EB50A0071816C /* GoogleService-Info.plist in Resources */,
+				07BF9E8B21600CA900A9CFEF /* GoogleService-Info.plist in Resources */,
 				F4B01E18215CF88200E3FF1A /* Assets.xcassets in Resources */,
 				F4B01E16215CF88100E3FF1A /* Main.storyboard in Resources */,
 			);
@@ -193,16 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IslamAcademy/Pods-IslamAcademy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -217,15 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-IslamAcademy-checkManifestLockResult.txt",
 			);

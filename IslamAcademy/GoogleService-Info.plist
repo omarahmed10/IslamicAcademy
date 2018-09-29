@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>971498106080-ehbap1oe5iqhgucctoia882c4sr5dubo.apps.googleusercontent.com</string>
+	<string>346462296093-0352gkhjp5lt187vvl2ermioe503udd5.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.971498106080-ehbap1oe5iqhgucctoia882c4sr5dubo</string>
+	<string>com.googleusercontent.apps.346462296093-0352gkhjp5lt187vvl2ermioe503udd5</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBXUO9NTBr8EyG86Qw9VTwz-Llx-WoOE7k</string>
+	<string>AIzaSyAQZDQiHFsDxgtQYUsfluk_5ly4_LWqhy4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>971498106080</string>
+	<string>346462296093</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>islam.academy.IslamAcademy</string>
 	<key>PROJECT_ID</key>
-	<string>islamicacademy-a4e82</string>
+	<string>islamacdemy</string>
 	<key>STORAGE_BUCKET</key>
-	<string>islamicacademy-a4e82.appspot.com</string>
+	<string>islamacdemy.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:971498106080:ios:78ef9432e442dbb3</string>
+	<string>1:346462296093:ios:78ef9432e442dbb3</string>
 	<key>DATABASE_URL</key>
-	<string>https://islamicacademy-a4e82.firebaseio.com</string>
+	<string>https://islamacdemy.firebaseio.com</string>
 </dict>
 </plist>

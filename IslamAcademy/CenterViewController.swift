@@ -1,7 +1,10 @@
 
 import UIKit
+import FirebaseCore
 
 class CenterViewController: UIViewController {
+    
+    var ref: DatabaseReference!
     
     var delegate : CenterViewControllerDelegate?
     enum CellIdentifiers {
@@ -19,14 +22,28 @@ class CenterViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        let f = Feed()
-        f.title = "صوت";f.describe = "صصمرمنرمرمن";f.type = .Audio;allFeeds.append(f)
-        let f1 = Feed()
-        f1.title = "كلام";f1.describe = "شمنسربشسيبش";f1.type = .Article;allFeeds.append(f1)
-        let f2 = Feed()
-        f2.title = "فيديو";f2.describe = "نشيبزنشتسزيبشسيبش";f2.type = .Video;allFeeds.append(f2)
-        filteredFeeds = allFeeds
-        tableView.reloadData()
+        ref = Database.database().reference()
+
+        ref.child("islamacdemy").observeSingleEvent(of: .value, with: { (snapshot) in
+            // Get user value
+            if let feedsDictionary = snapshot.value as? NSDictionary {
+                for feed in feedsDictionary {
+//                    feed
+                }
+                tableView.reloadData()
+            }
+            // ...
+        }) { (error) in
+            print(error.localizedDescription)
+        }
+//        let f = Feed()
+//        f.title = "صوت";f.describe = "صصمرمنرمرمن";f.type = .Audio;allFeeds.append(f)
+//        let f1 = Feed()
+//        f1.title = "كلام";f1.describe = "شمنسربشسيبش";f1.type = .Article;allFeeds.append(f1)
+//        let f2 = Feed()
+//        f2.title = "فيديو";f2.describe = "نشيبزنشتسزيبشسيبش";f2.type = .Video;allFeeds.append(f2)
+//        filteredFeeds = allFeeds
+//        tableView.reloadData()
     }
     
     @IBAction func sidePanClicked(_ sender: Any) {
