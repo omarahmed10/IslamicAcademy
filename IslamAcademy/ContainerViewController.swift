@@ -55,6 +55,10 @@ extension ContainerViewController: CenterViewControllerDelegate {
         animateLeftPanel(shouldExpand: notAlreadyExpanded)
     }
     
+    func collapseSidePanels() {
+        animateLeftPanel(shouldExpand: false)
+    }
+    
     func addLeftPanelViewController() {
         guard leftViewController == nil else { return }
         

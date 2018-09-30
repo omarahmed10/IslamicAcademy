@@ -28,8 +28,7 @@ class Feed: NSObject {
         
     }
     
-    init?(snapshot: DataSnapshot) {
-        guard let dict = snapshot.value as? [String:Any] else { return nil }
+    init?(dict: [String:String]) {
         guard let desc = dict["desc"]  as? String else { return nil }
         guard let title = dict["title"]  as? String else { return nil }
         guard let body = dict["content"]  as? String else { return nil }

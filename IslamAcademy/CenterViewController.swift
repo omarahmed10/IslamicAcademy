@@ -1,6 +1,7 @@
 
 import UIKit
 import FirebaseCore
+import FirebaseDatabase
 
 class CenterViewController: UIViewController {
     
@@ -40,16 +41,17 @@ class CenterViewController: UIViewController {
     }
     
     func getFeeds(){
-        ref.child("islamacdemy").observeSingleEvent(of: .value, with: { [weak self](snapshot) in
+        ref.observeSingleEvent(of: .value, with: { [weak self](snapshot) in
             // Get user value
+            self?.allFeeds.removeAll()
             if let feedsDictionary = snapshot.value as? NSDictionary {
                 for feed in feedsDictionary {
-                    //                    feed
+                    if let feedValue = feed.value as? [String:String], let newFeed = Feed(dict: feedValue) {
+                        self?.allFeeds.append(newFeed)
+                    }
                 }
-                tableView.reloadData()
             }
-            
-            self?.filteredFeeds = self?.allFeeds
+            self?.filteredFeeds = (self?.allFeeds)!
             self?.tableView.reloadData()
         }) { (error) in
             print(error.localizedDescription)
@@ -73,7 +75,14 @@ extension CenterViewController : SidePanelSelectionDelegate {
 }
 
 extension CenterViewController : UITableViewDelegate{
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let videoController = storyboard.instantiateViewController(withIdentifier: "FeedDetailsViewController") as? FeedDetailsViewController {
+            delegate?.collapseSidePanels?()
+            videoController.feedModel = filteredFeeds[indexPath.row]
+            self.navigationController?.pushViewController(videoController, animated: true)
+        }
+    }
 }
 extension CenterViewController : UITableViewDataSource {
     

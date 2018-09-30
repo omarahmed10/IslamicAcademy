@@ -12,6 +12,7 @@
 		98430DFB215EA1920071816C /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98430DFA215EA1920071816C /* File.swift */; };
 		98430DFD215EA3180071816C /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98430DFC215EA3180071816C /* FeedTableViewCell.swift */; };
 		B1AC35854F9671CE2DD9FC98 /* Pods_IslamAcademy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C70DF8AA8B566EE040F655 /* Pods_IslamAcademy.framework */; };
+		F43199FA2160F1AE005C731D /* FeedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43199F92160F1AE005C731D /* FeedDetailsViewController.swift */; };
 		F4B01E11215CF88100E3FF1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B01E10215CF88100E3FF1A /* AppDelegate.swift */; };
 		F4B01E13215CF88100E3FF1A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B01E12215CF88100E3FF1A /* ViewController.swift */; };
 		F4B01E16215CF88100E3FF1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B01E14215CF88100E3FF1A /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		98430DFA215EA1920071816C /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		98430DFC215EA3180071816C /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		EC7D751100E134584F2CEFFD /* Pods-IslamAcademy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IslamAcademy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IslamAcademy/Pods-IslamAcademy.debug.xcconfig"; sourceTree = "<group>"; };
+		F43199F92160F1AE005C731D /* FeedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailsViewController.swift; sourceTree = "<group>"; };
 		F4B01E0D215CF88100E3FF1A /* IslamAcademy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IslamAcademy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B01E10215CF88100E3FF1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4B01E12215CF88100E3FF1A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				F4B01E10215CF88100E3FF1A /* AppDelegate.swift */,
 				F4B01E12215CF88100E3FF1A /* ViewController.swift */,
 				F4B01E14215CF88100E3FF1A /* Main.storyboard */,
+				F43199F92160F1AE005C731D /* FeedDetailsViewController.swift */,
 				F4B01E26215D057F00E3FF1A /* CenterViewController.swift */,
 				F4B01E28215D057F00E3FF1A /* CenterViewControllerDelegate.swift */,
 				F4B01E25215D057E00E3FF1A /* ContainerViewController.swift */,
@@ -196,11 +199,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-IslamAcademy/Pods-IslamAcademy-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MobilePlayer/MobilePlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobilePlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,6 +243,7 @@
 				F4B01E2D215D057F00E3FF1A /* CenterViewControllerDelegate.swift in Sources */,
 				F4B01E29215D057F00E3FF1A /* SidePanelViewController.swift in Sources */,
 				F4B01E2F215D147800E3FF1A /* MenuTableViewCell.swift in Sources */,
+				F43199FA2160F1AE005C731D /* FeedDetailsViewController.swift in Sources */,
 				F4B01E13215CF88100E3FF1A /* ViewController.swift in Sources */,
 				F4B01E2A215D057F00E3FF1A /* ContainerViewController.swift in Sources */,
 				98430DFB215EA1920071816C /* File.swift in Sources */,

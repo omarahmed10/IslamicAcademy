@@ -8,5 +8,6 @@ target 'IslamAcademy' do
   # Pods for IslamAcademy
 pod 'Firebase/Core'
 pod 'Firebase/Database'
+pod 'MobilePlayer'
 
 end
