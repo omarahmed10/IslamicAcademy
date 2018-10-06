@@ -30,9 +30,13 @@ class ContainerViewController: UIViewController {
         // wrap the centerViewController in a navigation controller, so we can push views to it
         // and display bar button items in the navigation bar
         centerNavigationController = UINavigationController(rootViewController: centerViewController)
+        centerNavigationController.navigationBar.barTintColor = UIColor.green
+        centerNavigationController.navigationBar.backgroundColor = UIColor.green
+        centerNavigationController.navigationBar.tintColor = UIColor.white
+        centerNavigationController.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         view.addSubview(centerNavigationController.view)
         addChildViewController(centerNavigationController)
-        centerViewController.navigationItem.title = "الداعية فاغيةالشهري"
+        centerViewController.navigationItem.title = "المكتبة الصوتية للاستاذة فاغية الشهري"
         centerNavigationController.didMove(toParentViewController: self)
         
 //        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(_:)))

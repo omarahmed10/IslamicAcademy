@@ -197,11 +197,11 @@ class FeedDetailsViewController: UIViewController,AVAudioPlayerDelegate {
     func bind(model : Feed){
         switch model.type {
         case .Article:
-            logo.image = #imageLiteral(resourceName: "icons8-news-50")
+            logo.image = #imageLiteral(resourceName: "Article")
         case .Audio:
-            logo.image = #imageLiteral(resourceName: "icons8-music-50")
+            logo.image = #imageLiteral(resourceName: "Audio")
         case .Video:
-            logo.image = #imageLiteral(resourceName: "icons8-documentary-50")
+            logo.image = #imageLiteral(resourceName: "video")
         default:
             break
         }

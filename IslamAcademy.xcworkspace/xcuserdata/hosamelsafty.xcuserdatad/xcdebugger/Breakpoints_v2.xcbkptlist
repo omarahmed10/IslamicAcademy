@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IslamAcademy/CenterViewController.swift"
-            timestampString = "560021537.1626329"
+            timestampString = "560550292.434888"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -26,12 +26,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IslamAcademy/FeedDetailsViewController.swift"
-            timestampString = "560186406.303772"
+            timestampString = "560552768.332841"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "111"
             endingLineNumber = "111"
             landmarkName = "updateAudioProgressView()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IslamAcademy/SidePanelViewController.swift"
+            timestampString = "560552768.332934"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "CellIdentifiers"
+            landmarkType = "13">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IslamAcademy.SidePanelViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; IslamAcademy.SidePanelViewController"
+                  moduleName = "IslamAcademy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosamelsafty/HajjHackathon/IslamicAcademy/IslamAcademy/SidePanelViewController.swift"
+                  timestampString = "560548016.749877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "577">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "IslamAcademy.SidePanelViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;IslamAcademy.SidePanelViewController&gt;"
+                  moduleName = "IslamAcademy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hosamelsafty/HajjHackathon/IslamicAcademy/IslamAcademy/SidePanelViewController.swift"
+                  timestampString = "560548016.751915"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "493">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IslamAcademy/HeaderTableViewCell.swift"
+            timestampString = "560550292.435216"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "awakeFromNib()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
